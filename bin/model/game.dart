@@ -18,7 +18,6 @@ class Game {
   Stadium? stadium;
   Referee? referee;
   Commentator? commentator;
-  // Safe input methods with validation
   String getStringInput(String prompt, {String defaultValue = ""}) {
     stdout.write(prompt);
     String? input = stdin.readLineSync();
@@ -138,8 +137,6 @@ class Game {
         fanLoyalty: fanLoyalty,
       );
     }
-
-    // return myTeam;
   }
 
   // Create stadium
@@ -339,7 +336,6 @@ class Game {
       } else if (team2Score > team1Score) {
         winner = team2!;
       } else {
-        // In case of tie, team with higher power wins
         winner = team1Power >= team2Power ? team1! : team2!;
         if (team1Score == team2Score) {
           if (team1Power >= team2Power) {

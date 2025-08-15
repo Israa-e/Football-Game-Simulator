@@ -16,7 +16,6 @@ class Referee extends Person {
     required super.nationality,
     required this.strictness,
   }) : super(id: _idCounter++);
-  // Method to display referee information
   @override
   void displayInfo() {
     print("\n👨‍⚖️ REFEREE: $name (From: $nationality)");

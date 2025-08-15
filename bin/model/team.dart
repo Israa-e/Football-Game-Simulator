@@ -3,12 +3,9 @@ import 'trainer.dart';
 import '../data/enum.dart';
 
 class Team {
-  // Required properties
   String teamName;
   Trainer trainer;
   List<Player> players;
-
-  // Additional creative properties
   String mascot;
   String city;
   String teamColors;
@@ -43,7 +40,6 @@ class Team {
     }
   }
 
-  // Calculate total team power
   int calculateTotalPower() {
     int playersPower = players.fold(0, (sum, player) => sum + player.power!);
     int trainerBonus = trainer.experience! + trainer.getMotivationBonus();

@@ -4,7 +4,6 @@ class Trainer extends Person {
   static int _idCounter = 1;
   int? experience;
 
-  // Additional creative properties
   String? strategySpecialty;
   int? motivation;
 
@@ -18,7 +17,6 @@ class Trainer extends Person {
   }) : super(id: _idCounter++) {
     experience ??= 0;
   }
-  // Method to display trainer information
   @override
   void displayInfo() {
     print("  🧑‍🏫 $name - ${super.name.toUpperCase()}");
